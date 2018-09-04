@@ -8,7 +8,7 @@ export default class HomeScreen extends React.Component {
         <Text>Home!</Text>
         <Button
           title="Go to Settings"
-          onPress={() => this.props.navigation.navigate('Settings')}
+          onPress={() => this.props.navigation.navigate('Info')}
         />
       </View>
     );
