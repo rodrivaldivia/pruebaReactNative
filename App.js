@@ -14,21 +14,21 @@ export default TabNavigator({
     screen: HomeScreen,
     navigationOptions: {
       tabBarLabel: 'Inicio',
-      tabBarIcon: ({ tintColor }) => <Icon name="view-headline" size={32} color={tintColor} />
+      // tabBarIcon: ({ tintColor }) => <Icon name="view-headline" size={32} color={tintColor} />
     },
   },
   NewProposal: {
     screen: ProposalScreen,
     navigationOptions: {
       tabBarLabel: 'Proveedor',
-      tabBarIcon: ({ tintColor }) => <Icon name="add-box" size={32} color={tintColor} />
+      // tabBarIcon: ({ tintColor }) => <Icon name="add-box" size={32} color={tintColor} />
     },
   },
   Info: {
     screen: SettingsScreen,
     navigationOptions: {
       tabBarLabel: 'Settings',
-      tabBarIcon: ({ tintColor }) => <Icon name="assignment" size={32} color={tintColor} />
+      // tabBarIcon: ({ tintColor }) => <Icon name="assignment" size={32} color={tintColor} />
     },
   },
 });
