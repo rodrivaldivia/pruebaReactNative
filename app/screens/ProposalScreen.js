@@ -9,7 +9,7 @@ class ProposalScreen extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      preguntas: [{ s: 'pregunta 1'}, { s: 'pregunta 2'}, { s: 'pregunta 3'}],
+      preguntas: [{ s: 'pregunta 1'}, { s: 'pregunta 2'}, { s: 'pregunta 3'}, { s: 'pregunta 3'}],
     }
 
   }
@@ -21,18 +21,24 @@ class ProposalScreen extends React.Component {
       <View>
         <Header centerComponent={{ text: 'Nueva Propuesta', style: { fontSize: 18, color: '#fff' } }} />
         <ScrollView>
-          {/*{
-            this.state.preguntas.map((pregunta) => (
-              <div>
-                <FormLabel>{ {pregunta.s} }</FormLabel>
-                <FormInput onChangeText={console.log("change")}/>
-                <FormValidationMessage>Error message</FormValidationMessage>
-              </div>
-            ))
-          }*/}
+          {
+            this.state.preguntas.map((pregunta, i) => {
+              return (
+                <View key={ i }>{/*
+                  <Text>{ pregunta.s }</Text>*/}
+                  <FormLabel>{ pregunta.s }</FormLabel>
+                  <FormInput onChangeText={console.log("change")}/>
+                  {false && <FormValidationMessage>Error message</FormValidationMessage>}
+                </View>
+              )
+            })
+          }
+
+
+          {/*
           <FormLabel>Pregunta random</FormLabel>
                 <FormInput onChangeText={console.log("change")}/>
-                <FormValidationMessage>Error message</FormValidationMessage>
+                <FormValidationMessage>Error message</FormValidationMessage>*/}
         </ScrollView>
       </View>
     );
