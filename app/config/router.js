@@ -5,9 +5,7 @@ import { Icon } from 'react-native-elements';
 import Feed from '../screens/Feed';
 import Me from '../screens/Me';
 
-
-      
-      export default TabNavigator(
+  export default TabNavigator(
   {
     Home: { screen: HomeScreen },
     Settings: { screen: SettingsScreen },
